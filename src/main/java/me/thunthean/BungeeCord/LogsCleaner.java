@@ -1,4 +1,6 @@
-package me.thunthean.Spigot;
+package me.thunthean.BungeeCord;
+
+import me.thunthean.Spigot.SpigotLogsCleaner;
 
 import java.io.File;
 import java.util.Date;
@@ -27,13 +29,13 @@ public class LogsCleaner {
             }
 
             if (deletedFiles > 0) {
-                SpigotLogsCleaner.getInstance().getServer().getConsoleSender().sendMessage(PREFIX + "Log cleanup completed. Deleted " + deletedFiles + " logs old than " + keep_logs +  " days.");
+                BungeeLogsCleaner.getInstance().getLogger().info("Log cleanup completed. Deleted " + deletedFiles + " logs old than " + keep_logs +  " days.");
                 return;
             }
 
         }
 
-        SpigotLogsCleaner.getInstance().getServer().getConsoleSender().sendMessage(PREFIX + "No logs have been purged...");
+        BungeeLogsCleaner.getInstance().getLogger().info("No logs have been purged...");
 
     }
 }
