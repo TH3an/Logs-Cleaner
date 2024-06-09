@@ -1,0 +1,6 @@
+name: Logs-Cleaner
+version: '${project.version}'
+description: ${project.description}
+author: thunthean
+api-version: '1.17'
+main: me.thunthean.BungeeCord.BungeeLogsCleaner
