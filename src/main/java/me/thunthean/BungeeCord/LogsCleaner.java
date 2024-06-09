@@ -8,7 +8,7 @@ import java.util.Date;
 import static me.thunthean.Spigot.SpigotLogsCleaner.PREFIX;
 
 public class LogsCleaner {
-    private static final int keep_logs = SpigotLogsCleaner.getInstance().getConfig().getInt("Keep-logs");
+    private static final int keep_logs = BungeeLogsCleaner.getInstance().getConfig().getInt("Keep-logs");
     public static void cleanupLogs() {
 
         File logDir = new File("logs");
