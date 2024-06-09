@@ -1,0 +1,4 @@
+# How long you want to keep the logs
+# By default "14" = 14 days
+Keep-logs: "14"
+24hours-Check: false

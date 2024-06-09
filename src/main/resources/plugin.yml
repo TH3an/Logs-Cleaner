@@ -1,0 +1,4 @@
+name: LogsCleaner
+version: '${project.version}'
+main: me.thunthean.LogsCleaner
+api-version: '1.17'
